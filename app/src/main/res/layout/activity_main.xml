@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/contentList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border" >
+
+        <ImageButton
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_margin="5dp"
+            android:background="@color/buttonUp"
+            android:padding="5dp"
+            android:src="@drawable/delete"
+            android:tag="1"
+            tools:ignore="SpeakableTextPresentCheck" />
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_margin="5dp"
+            android:background="@color/buttonUp"
+            android:padding="5dp"
+            android:src="@drawable/back"
+            android:visibility="gone" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center|center_vertical"
+            android:height="95px"
+            android:text="@string/app_name"
+            android:textSize="20dp"
+            android:textColor="@color/font" />
+
+        <ImageButton
+            android:id="@+id/addButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="5dp"
+            android:background="@color/buttonUp"
+            android:padding="5dp"
+            android:src="@drawable/add"
+            android:tag="2"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/deleteok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="5dp"
+            android:background="@color/buttonUp"
+            android:padding="5dp"
+            android:src="@drawable/ok"
+            android:visibility="gone" />
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/listline"
+            android:drawSelectorOnTop="true"
+            android:cacheColorHint="#00000000"
+            android:padding="5dp"
+            android:dividerHeight="1px"
+            android:layout_weight="1" >
+        </ListView>
+        <TextView android:id="@+id/listCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:layout_gravity="right"
+            />
+    </LinearLayout>
+</LinearLayout>
