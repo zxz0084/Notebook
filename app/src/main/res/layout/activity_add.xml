@@ -12,7 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:background="@drawable/border"
+        android:background="@drawable/img_1"
+        android:layout_gravity="bottom"
         >
 
         <ImageButton
@@ -21,7 +22,6 @@
             android:layout_height="wrap_content"
             android:layout_gravity="left"
             android:layout_margin="5dp"
-            android:background="@color/buttonUp"
             android:padding="5dp"
             android:src="@drawable/delete"
             android:tag="3"
@@ -42,7 +42,6 @@
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:layout_margin="5dp"
-            android:background="@color/buttonUp"
             android:padding="5dp"
             android:src="@drawable/ok"
             android:tag="4"
